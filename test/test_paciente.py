@@ -61,9 +61,6 @@ class TestPaciente(unittest.TestCase):
         with self.assertRaises(FechaNacimientoInvalidaError):
             Paciente("Pepe", "12345678", fecha_str)
 
-    def test_debug_print(self):
-        print("Esto solo es para probar que el test corre")
-
 
 if __name__ == '__main__':
     unittest.main(argv=[''], exit=False)

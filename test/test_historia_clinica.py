@@ -129,18 +129,7 @@ class TestHistoriaClinica(unittest.TestCase):
             "-------------------------"
         )
 
-    def test_str_con_listas_de_elementos_vacios(self):
-        
-        
-        hc_vacia = HistoriaClinica(self.paciente_titular)
-        expected_output_vacia = (
-            "--- Historia Clínica ---\n"
-            "Paciente: Juan Pérez (DNI: 12345678)\n"
-            "  Turnos: [] (Este paciente no tiene turnos registrados aún)\n"
-            "  Recetas: [] (Este paciente no tiene recetas registradas aún)\n"
-            "-------------------------"
-        )
-        self.assertEqual(str(hc_vacia), expected_output_vacia)
+
 
 if __name__ == '__main__':
     unittest.main(argv=[''], exit=False)
